@@ -10,7 +10,7 @@ public class OrangeHRMTest {
         WebDriver driver = DriverManager.getDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-        Thread.sleep(3000); // Replace with WebDriverWait in real tests
+        Thread.sleep(3000);
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("Admin", "admin123");
@@ -32,3 +32,4 @@ public class OrangeHRMTest {
         driver.quit();
     }
 }
+
